@@ -44,6 +44,12 @@ function Footer() {
         icon={<AccountCircleIcon />}
         onClick={() => handleNavigation("/profile")}
       />
+      <BottomNavigationAction
+        style={iconStyle}
+        label="Chat"
+        icon={<AccountCircleIcon />}
+        onClick={() => handleNavigation("/chat")}
+      />
     </BottomNavigation>
   );
 }
