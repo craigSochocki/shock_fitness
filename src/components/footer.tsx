@@ -3,6 +3,8 @@ import { BottomNavigation, BottomNavigationAction } from "@mui/material";
 import HomeIcon from "@mui/icons-material/Home";
 import SearchIcon from "@mui/icons-material/Search";
 import AccountCircleIcon from "@mui/icons-material/AccountCircle";
+import ChatIcon from "@mui/icons-material/Chat";
+
 import { useRouter } from "next/router";
 
 function Footer() {
@@ -47,7 +49,7 @@ function Footer() {
       <BottomNavigationAction
         style={iconStyle}
         label="Chat"
-        icon={<AccountCircleIcon />}
+        icon={<ChatIcon />}
         onClick={() => handleNavigation("/chat")}
       />
     </BottomNavigation>
