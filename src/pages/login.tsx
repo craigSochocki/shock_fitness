@@ -24,6 +24,7 @@ function Login() {
     } catch (error: unknown) {
       if (error instanceof Error) {
         setError(error.message);
+        console.log(error.message)
       } else {
         setError("An unknown error occurred");
       }
